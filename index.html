@@ -23,23 +23,64 @@
     </nav>
 
     <header>
-
+        <section id="info-header">
+            <h1>Bem-vindo ao <strong id="spotify">Spotify</strong></h1>
+            <h2>O mundo da música está aqui</h2>
+            <hr>
+        </section>
+        <section id="nav-header">
+            <a href="#"><button>Tudo</button></a>
+            <a href="#"><button>Músicas</button></a>
+            <a href="#"><button>Podcasts</button></a>
+            <a href="#"><button>Album</button></a>
+        </section>
     </header>
 
     <main>
         <!--Parte das músicas "Feito para você"-->
         <section>
-
+            <div id="container-title-musicas">
+                <h1>Feito para você!</h1>
+                <h3>Veja mais...</h3>
+            </div>
+            <div id="container-musicas">
+                <div class="card">
+                    <img id="img-capa" src="" alt="Capa da música">
+                    <h3>Nome da música</h3>
+                    <label>Nome do cantor</label>
+                    <label>Data de lançamento</label>
+                </div>
+            </div>
         </section>
 
         <!--Parte dos artistas "Artistas favoritos"-->
         <section>
-
+            <div id="container-title-artistas">
+                <h1>Artistas favoritos</h1>
+            </div>
+            <div class="card">
+                <img id="img-artista" src="" alt="Foto do artista">
+                    <h3>Nome do cantor</h3>
+            </div>
         </section>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer class="custom-footer">
+    <div class="footer-column">
+        <p class="credit-text">
+            Este projeto é uma <strong>adaptação e estudo</strong> inspirado no design e funcionalidade do <strong>Spotify.</strong>
+        </p>
+        <p>
+            Visite o site oficial:
+            <a href="https://www.spotify.com/" target="_blank" class="spotify-link">spotify.com</a>
+        </p>
+    </div>
+    <div class="footer-column educational-info">
+        <p class="study-text">
+            Este é um <strong>trabalho estudantil</strong> desenvolvido para a
+            <strong class="etec-name">ETEC Cidade Tiradentes</strong>.
+        </p>
+    </div>
+</footer>
 </body>
 </html>

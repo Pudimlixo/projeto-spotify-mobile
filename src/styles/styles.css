@@ -7,14 +7,14 @@
     --fonte:"Arial";
 }
 
-h1, h2, p{
+h1, h2, h3, h4, p, label{
     font-family: var(--fonte);
     color:white;
 }
 
 body{
     height: 100vh;
-    background:linear-gradient(90deg,#226a3a,#020703);
+    background:linear-gradient(90deg,var(--cor2),var(--cor3));
 }
 
 #logo-spotify{
@@ -51,4 +51,136 @@ nav picture h1{
 
 nav picture#perfil{
     justify-content: end;
+}
+
+#info-header{
+    display:flex;
+    align-items:start;
+    flex-direction:column;
+    padding:10px;
+}
+
+header h1 strong#spotify{
+    color:var(--cor1);
+}
+
+header hr{
+    width:98%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+header #nav-header{
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+}
+
+header #nav-header a{
+    cursor:pointer;
+}
+
+header #nav-header a button{
+    color:white;
+    background-color: transparent;
+    border-radius: 15px;
+    border:2px solid white;
+    padding:5px;
+    min-width:80px;
+    height:35px;
+}
+
+main{
+    padding:10px;
+    margin-top: 10px;
+}
+
+main section #container-title-musicas{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+main section #container-musicas{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction:row;
+}
+
+main section #container-musicas div.card{
+    display:flex;
+    align-items: start;
+    flex-direction:column;
+    width:150px;
+    gap:5px;
+
+}
+
+#container-title-artistas{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.custom-footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #282828; 
+    color: #b3b3b3;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-start;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 280px;
+    margin: 10px;
+    text-align: center;
+}
+
+.credit-text, .study-text {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.spotify-link {
+    color: #1ed760;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotify-link:hover {
+    text-decoration: underline;
+}
+
+.educational-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 600px) {
+    .custom-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        min-width: unset;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-column:last-child {
+        margin-bottom: 0; 
+    }
 }
