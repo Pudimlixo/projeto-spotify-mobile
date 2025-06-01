@@ -167,6 +167,69 @@ main section #container-musicas div.card{
     align-items: center;
 }
 
+#container-musicas,#container-artistas {
+    display: flex; 
+    overflow-x: auto; /* Permite rolagem horizontal */
+    scroll-snap-type: x mandatory; /* Para "grudar" nos cards ao rolar */
+    -webkit-overflow-scrolling: touch; /* Melhora o scroll em iOS */
+    gap: 15px; /* Espaço entre os cards */
+    padding-bottom: 15px; /* Espaço para a scrollbar não ficar colada nos cards */
+    /* Opcional: esconder a barra de rolagem mas manter a funcionalidade */
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;   /* IE and Edge */
+}
+
+#container-musicas::-webkit-scrollbar,
+#container-artistas::-webkit-scrollbar {
+    display: none;
+}
+
+/* Opcional: Melhorar a aparência dos cards dentro do carrossel */
+#container-musicas .card,
+#container-artistas .card-artista {
+    flex-shrink: 0; /* Impede que os cards encolham */
+    scroll-snap-align: start; /* Alinha o início do card ao início da rolagem */
+    /* Mantenha suas larguras originais (width: 150px) */
+    width: 150px; /* Ou o tamanho que você preferir para cada card */
+}
+
+/* Ajuste o `justify-content` para que os cards não fiquem espalhados demais quando há poucos */
+main section #container-musicas,
+main section #container-artistas {
+    justify-content: flex-start; /* Alinha os itens ao início do container */
+}
+
+.card{
+    width:150px;
+}
+
+.img-capa{
+    width:110px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.208);
+}
+
+.card-artista{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    width:150px;
+}
+
+.img-artista{
+    margin:auto;
+    width:110px;
+    height:90px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.208);
+}
+
+#nome-artista{
+    margin-top: 2px;
+    text-align: center;
+}
+
 
 @media (max-width: 600px) {
     .custom-footer {

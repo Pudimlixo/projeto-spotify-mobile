@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/reset.css">
     <link rel="stylesheet" href="/src/styles/styles.css">
-    <script src="src/scripts/script.js" type="module"></script>
+    <script src="src/scripts/card.js" type="module"></script>
     <script src="src/scripts/interactions.js"></script>
     <link rel="shortcut icon" href="public/imagens/icons/spotify-logo.png" type="image/x-icon">
     <title>Spotify</title>
@@ -45,10 +45,54 @@
             </div>
             <div id="container-musicas">
                 <div class="card">
-                    <img id="img-capa" src="" alt="Capa da música">
-                    <h3>Nome da música</h3>
-                    <label>Nome do cantor</label>
-                    <label>Data de lançamento</label>
+                    <div>
+                        <img class="img-capa" src="./public/imagens/conteudo/album-hit-me-hard-and-soft.jpeg" alt="Capa da música">
+                    </div>
+                    <div>
+                        <h3 class="titulo-musica">CHIHIRO</h3>
+                        <label class="cantor-musica">Billie Eilish</label>
+                        <label class="ano-musica">2024</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="img-capa" src="./public/imagens/conteudo/album-hit-me-hard-and-soft.jpeg" alt="Capa da música">
+                    </div>
+                    <div>
+                        <h3 class="titulo-musica">BIRDS OF A FATHER</h3>
+                        <label class="cantor-musica">Billie Eilish</label>
+                        <label class="ano-musica">2024</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="img-capa" src="./public/imagens/conteudo/cazuza-capa.webp" alt="Capa da música">
+                    </div>
+                    <div>
+                        <h3 class="titulo-musica">Exagerado</h3>
+                        <label class="cantor-musica">Cazuza</label>
+                        <label class="ano-musica">1985</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="img-capa" src="./public/imagens/conteudo/gorillaz-album-song-machine.jpeg" alt="Capa da música">
+                    </div>
+                    <div>
+                        <h3 class="titulo-musica">Song Machine - Season One</h3>
+                        <label class="cantor-musica">Gorillaz</label>
+                        <label class="ano-musica">2020</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="img-capa" src="./public/imagens/conteudo/infiel-capa.webp" alt="Capa da música">
+                    </div>
+                    <div>
+                        <h3 class="titulo-musica">Infiel</h3>
+                        <label class="cantor-musica">Marília Mendonça</label>
+                        <label class="ano-musica">2016</label>
+                    </div>
                 </div>
             </div>
         </section>
@@ -58,9 +102,39 @@
             <div id="container-title-artistas">
                 <h1>Artistas favoritos</h1>
             </div>
-            <div class="card">
-                <img id="img-artista" src="" alt="Foto do artista">
-                    <h3>Nome do cantor</h3>
+            <div id="container-artistas">
+                <div class="card-artista">
+                    <div>
+                        <img class="img-artista" src="./public/imagens/conteudo/billie-eilish-photo.jpeg" alt="Foto do artista">
+                    </div>
+                    <div id="nome-artista">
+                        <h3>Billie Eilish</h3>
+                    </div>
+                </div>
+                <div class="card-artista">
+                    <div>
+                        <img class="img-artista" src="./public/imagens/conteudo/cazuza-photo.jpeg" alt="Foto do artista">
+                    </div>
+                    <div id="nome-artista">
+                        <h3>Cazuza</h3>
+                    </div>
+                </div>
+                <div class="card-artista">
+                    <div>
+                        <img class="img-artista" src="./public/imagens/conteudo/mariliamendona-photo.jpeg" alt="Foto do artista">
+                    </div>
+                    <div id="nome-artista">
+                        <h3>Marília Mendonça</h3>
+                    </div>
+                </div>
+                <div class="card-artista">
+                    <div>
+                        <img class="img-artista" src="./public/imagens/conteudo/gorillaz-photo.jpeg" alt="Foto do artista">
+                    </div>
+                    <div id="nome-artista">
+                        <h3>Gorillaz</h3>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
