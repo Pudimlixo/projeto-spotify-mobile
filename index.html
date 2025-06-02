@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/reset.css">
     <link rel="stylesheet" href="/src/styles/styles.css">
-    <script src="src/scripts/card.js" type="module"></script>
-    <script src="src/scripts/interactions.js"></script>
+    <script src="src/scripts/interactions.js" defer> </script>
+    <script type="module" src="src/scripts/database-memory.js" defer></script>
+    <script type="module" src="src/scripts/tocar-audio.js" defer></script>
     <link rel="shortcut icon" href="public/imagens/icons/spotify-logo.png" type="image/x-icon">
     <title>Spotify</title>
 </head>
@@ -156,5 +157,13 @@
         </p>
     </div>
 </footer>
+
+    <audio id="audio-player" controls style="display: none;">
+    <source id="audio-source" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+</audio>
+
 </body>
 </html>

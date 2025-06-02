@@ -1,5 +1,4 @@
 
-
 // No seu arquivo src/scripts/interactions.js
 
 let container_cards_musica = document.querySelector('#container-musicas');

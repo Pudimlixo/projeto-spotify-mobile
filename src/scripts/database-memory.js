@@ -1,40 +1,40 @@
 export const musicas = [
-    {
-        "capa":'',
-        "nome":'',
-        "artista":'',
-        "ano":0,
-        "musica_audio":'',
+ {
+        capa: './public/imagens/conteudo/album-hit-me-hard-and-soft.jpeg',
+        nome: 'CHIHIRO',
+        artista: 'Billie Eilish',
+        ano: 2024,
+        musica_audio: 'public\audios\Billie Eilish  CHIHIRO (Official Lyric Video).m4a'
     },
     {
-        "capa":'',
-        "nome":'',
-        "artista":'',
-        "ano":0,
-        "musica_audio":'',
+        capa: './public/imagens/conteudo/album-hit-me-hard-and-soft.jpeg',
+        nome: 'BIRDS OF A FATHER',
+        artista: 'Billie Eilish',
+        ano: 2024,
+        musica_audio: 'public\audios\Billie Eilish  CHIHIRO (Official Lyric Video).m4a'
     },
     {
-        "capa":'',
-        "nome":'',
-        "artista":'',
-        "ano":0,
-        "musica_audio":'',
+        capa: './public/imagens/conteudo/cazuza-capa.webp',
+        nome: 'Exagerado',
+        artista: 'Cazuza',
+        ano: 1985,
+        musica_audio: 'C:\Users\Moises\Desktop\projeto-spotify-mobile\public\audios\Gorillaz  Momentary Bliss ft. slowthai  Slaves (Episode One).m4a'
     },
     {
-        "capa":'',
-        "nome":'',
-        "artista":'',
-        "ano":0,
-        "musica_audio":'',
+        capa: './public/imagens/conteudo/gorillaz-album-song-machine.jpeg',
+        nome: 'Song Machine - Season One',
+        artista: 'Gorillaz',
+        ano: 2020,
+        musica_audio: 'public\audios\Gorillaz  Momentary Bliss ft. slowthai  Slaves (Episode One).m4a'
     },
-    {
-        "capa":'',
-        "nome":'',
-        "artista":'',
-        "ano":0,
-        "musica_audio":'',
+     {
+        capa: './public/imagens/conteudo/infiel-capa.webp',
+        nome: 'Infiel',
+        artista: 'Marília Mendonça',
+        ano: 2016,
+        musica_audio: 'public\audios\Marília Mendonça  Infiel  DVD Realidade.m4a'
     }
-]
+];
 
 export const artistas = [
     {
